@@ -3,6 +3,7 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 // import styles from './blog.module.css'
 import Layout from '../components/layout'
+import map from '../../assets/map.png'
 
 class Contact extends React.Component {
   render() {
@@ -33,7 +34,7 @@ class Contact extends React.Component {
               </div>
 
               <div id="map">
-                
+                <img src={map} alt="171 Rutherford Street pinned on Google Maps" />
               </div>
             </div>
           </div>
