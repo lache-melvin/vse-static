@@ -1,10 +1,9 @@
 import React from 'react'
-// import { graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-// import Hero from '../components/hero'
+
 import Layout from '../components/layout'
-// import ArticlePreview from '../components/article-preview'
+import projectImage from '../../assets/placeholder-project.png'
 
 class RootIndex extends React.Component {
   render() {
@@ -15,7 +14,11 @@ class RootIndex extends React.Component {
         <div style={{ background: '#fff' }}>
           <Helmet title={siteTitle} />
           <div className="wrapper">
-            <h2 className="section-headline">Vector Structural Engineering</h2>
+            <div className="home-title-image row">
+              <img src={projectImage} alt="some image" />
+              <h1 className="home-title">Vector Structural Engineering</h1>
+            </div>
+            <p>A lovely lil explanation idk, a testimonial</p>
           </div>
         </div>
       </Layout>
@@ -24,51 +27,3 @@ class RootIndex extends React.Component {
 }
 
 export default RootIndex
-
-// export const pageQuery = graphql`
-//   query HomeQuery {
-//     allContentfulBlogPost(sort: { fields: [publishDate], order: DESC }) {
-//       edges {
-//         node {
-//           title
-//           slug
-//           publishDate(formatString: "MMMM Do, YYYY")
-//           tags
-//           heroImage {
-//             fluid(maxWidth: 350, maxHeight: 196, resizingBehavior: SCALE) {
-//               ...GatsbyContentfulFluid_tracedSVG
-//             }
-//           }
-//           description {
-//             childMarkdownRemark {
-//               html
-//             }
-//           }
-//         }
-//       }
-//     }
-//     allContentfulPerson(
-//       filter: { contentful_id: { eq: "15jwOBqpxqSAOy2eOO4S0m" } }
-//     ) {
-//       edges {
-//         node {
-//           name
-//           shortBio {
-//             shortBio
-//           }
-//           title
-//           heroImage: image {
-//             fluid(
-//               maxWidth: 1180
-//               maxHeight: 480
-//               resizingBehavior: PAD
-//               background: "rgb:000000"
-//             ) {
-//               ...GatsbyContentfulFluid_tracedSVG
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// `
