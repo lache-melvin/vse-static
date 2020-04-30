@@ -1,13 +1,17 @@
 import React from 'react'
 
-import styles from './article-preview.module.css'
-
 export default ({ member }) => (
-  <div className={styles.preview}>
-    <img alt={member.image.description} src={member.image.file.url} />
-    <h4>{member.name}</h4>
-    <h5>{member.title}</h5>
-    <small>{member.credentials}</small>
-    <p>{member.email}</p>
+  <div className='staff-member'>
+    <img className='staff-image' alt={member.image.description} src={member.image.file.url} />
+    <div className='staff-display-div'>
+      <div className='staff-info'>
+        <h4>{member.name}</h4>
+        <p className='role'>{member.title}</p>
+        {member.credentials && 
+          <p className='qualifications'>{member.credentials}</p>
+        }
+        <p>{member.email}</p>
+      </div>
+    </div>
   </div>
 )

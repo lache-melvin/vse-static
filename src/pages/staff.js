@@ -17,15 +17,9 @@ class StaffIndex extends React.Component {
           <Helmet title={siteTitle} />
           <div className="wrapper">
             <h2 className="section-headline">Meet the Team</h2>
-            <ul>
-              {staff.map(({ node }) => {
-                return (
-                  <li key={node.name}>
-                    <StaffMember member={node} />
-                  </li>
-                )
-              })}
-            </ul>
+            <div className='staff'>
+              {staff.map(({ node }) => <StaffMember key={node.name} member={node} />)}
+            </div>
           </div>
         </div>
       </Layout>
@@ -39,7 +33,7 @@ export default StaffIndex
 
 export const pageQuery = graphql`
   query StaffQuery  {
-    allContentfulStaffMember {
+    allContentfulStaffMember(sort: {fields: sortId, order: ASC}) {
       edges {
         node {
           name
