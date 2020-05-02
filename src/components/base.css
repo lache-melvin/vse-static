@@ -156,6 +156,32 @@ h3 {
   margin-top: 20px;
 }
 
+
+/* NAVBAR */
+.navbar {
+  background-color: rgb(0, 47, 108);
+  width: 100%;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 1%;
+}
+.navbar a, .navbar a:visited {
+  display: initial;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;  /* might need to make smaller with projects */
+  padding: 13px 8px;
+}
+.navbar a:hover {
+  background-color: rgb(45, 90, 148);
+  border-radius: 5px;
+}
+
+
 @media only screen and (min-width: 768px) {
   .header-logo-div {
     width: 39%;
@@ -163,94 +189,64 @@ h3 {
   .header-logo {
     width: 90%;
   }
-  /* .navbar {
+  .navbar {
     width: 60%;
     margin-top: 30px;
-    display: flex;
-    flex-direction: row;
     justify-content: flex-end;
-    margin-right: 1%;
   }
-  .hamburger-bars {
-    display: none;
-  }
-  .navbar a {
-    display: initial;
-    color: white;
+  .navbar a, .navbar a:visited {
+    padding: 14px 16px;
     font-size: 17px;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-    */
-    p {
-      font-size: 15px;
-      width: 100%;
-    }
-    h1 {
-      text-align: left;
-      margin-left: 10%;
-    }
-    h2, h3 {
-      text-align: left;
-      margin-left: 8%;
-    }
-    
-    .home-title {
-      left: 5%;
-      font-size: 50px;
-    }
-    
-    .project {
-      background-color: white;
-      padding: 5px;
-      margin-top: 20px;
-    }
-    .staff {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .staff-member {
-      width: 50%;
-    } 
-    
-    .contact-content {
-      display: flex;
-    }
-    .contact-text {
-      width: 50%;
-      padding-top: 5%;
-    }
-    .contact-info {
-      margin-right: 5%;
-    }
-    #map {
-      width: 50%;
-      padding: 2%;
-    }
+  }
+  
+  p {
+    font-size: 15px;
+    width: 100%;
+  }
+  h1 {
+    text-align: left;
+    margin-left: 10%;
+  }
+  h2, h3 {
+    text-align: left;
+    margin-left: 8%;
+  }
+  
+  .home-title {
+    left: 5%;
+    font-size: 50px;
+  }
+  
+  .project {
+    background-color: white;
+    padding: 5px;
+    margin-top: 20px;
+  }
+  .staff {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .staff-member {
+    width: 50%;
+  } 
+  
+  .contact-content {
+    display: flex;
+  }
+  .contact-text {
+    width: 50%;
+    padding-top: 5%;
+  }
+  .contact-info {
+    margin-right: 5%;
+  }
+  #map {
+    width: 50%;
+    padding: 2%;
+  }
 }
     
-    /* img {
-      display: block;
-      width: 100%;
-    }
-    
-    h1,
-    h2,
-    h3 {
-      font-size: 2em;
-      font-weight: normal;
-    }
-    
-    a {
-      color: currentColor;
-    }
-    
-     */
-    
-    /**
-     * article grid
-     
+   /*
     .article-list {
       margin: 0;
       padding: 0;

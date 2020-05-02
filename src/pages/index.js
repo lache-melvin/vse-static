@@ -15,7 +15,7 @@ class RootIndex extends React.Component {
           <Helmet title={siteTitle} />
           <div className="wrapper">
             <div className="home-title-image row">
-              <img src={projectImage} alt="some image" />
+              <img src={projectImage} alt="placeholder project" />
               <h1 className="home-title">Vector Structural Engineering</h1>
             </div>
             <p>A lovely lil explanation idk, a testimonial</p>
