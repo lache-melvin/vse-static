@@ -14,19 +14,3 @@ class Nav extends React.Component {
 }
 
 export default Nav
-
-// export default () => (
-//   <nav role="navigation">
-//     <ul className={styles.navigation}>
-//       <li className={styles.navigationItem}>
-//         <Link to="/">Home</Link>
-//       </li>
-//       <li className={styles.navigationItem}>
-//         <Link to="/staff/">Staff</Link>
-//       </li>
-//       <li className={styles.navigationItem}>
-//         <Link to="/contact/">Contact</Link>
-//       </li>
-//     </ul>
-//   </nav>
-// )
