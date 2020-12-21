@@ -4,11 +4,21 @@ import { Link } from 'gatsby'
 
 class Nav extends React.Component {
   render () {
+    const { pathname } = this.props.location
     return (
         <div className="navbar" id="theNav">
-          <Link to="/">Home</Link>
-          <Link to="/staff/">About Us</Link>
-          <Link to="/contact/">Contact</Link>
+          <Link
+            to="/"
+            style={pathname === '/' ? { color: '#abe' } : null}
+          >Home</Link>
+          <Link
+            to="/staff/"
+            style={pathname === '/staff/' ? { color: '#abe' } : null}
+          >About Us</Link>
+          <Link
+            to="/contact/"
+            style={pathname === '/contact/' ? { color: '#abe' } : null}
+          >Contact</Link>
       </div> 
   )}
 }

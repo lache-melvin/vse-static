@@ -5,7 +5,7 @@ import Navigation from './navigation'
 
 class Template extends React.Component {
   render() {
-    const { children, assets } = this.props
+    const { children, assets, location } = this.props
     return (
       <Container>
         <div className='header'>
@@ -13,7 +13,7 @@ class Template extends React.Component {
             <div className="header-logo-div">
               <img className="header-logo" src={assets.logo} alt='VSE Logo' />
             </div>
-            <Navigation />
+            <Navigation location={location} />
           </div>
         </div>
         {children}
