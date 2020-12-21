@@ -10,9 +10,14 @@ class StaffIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const staff = get(this, 'props.data.allContentfulStaffMember.edges')
+    const assets = get(this, 'props.data.allContentfulAsset.edges')
+      .reduce((acc, { node }) => {
+        acc[node.title] = node.file.url
+        return acc
+      }, {})
 
     return (
-      <Layout location={this.props.location}>
+      <Layout assets={assets} location={this.props.location}>
         <div style={{ background: '#fff' }}>
           <Helmet title={siteTitle} />
           <div className="wrapper">
@@ -45,6 +50,18 @@ export const pageQuery = graphql`
               url
             }
           }
+        }
+      }
+    }
+    allContentfulAsset {
+      edges {
+        node {
+          id
+          title
+          file {
+            url
+          }
+          description
         }
       }
     }

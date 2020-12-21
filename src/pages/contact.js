@@ -1,16 +1,20 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-// import styles from './blog.module.css'
 import Layout from '../components/layout'
-import map from '../../assets/map.png'
 
 class Contact extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+    const assets = get(this, 'props.data.allContentfulAsset.edges')
+      .reduce((acc, { node }) => {
+        acc[node.title] = node.file.url
+        return acc
+      }, {})
 
     return (
-      <Layout location={this.props.location}>
+      <Layout assets={assets} location={this.props.location}>
         <div style={{ background: '#fff' }}>
           <Helmet title={siteTitle} />
           <div className="wrapper">
@@ -34,7 +38,7 @@ class Contact extends React.Component {
               </div>
 
               <div id="map">
-                <img src={map} alt="171 Rutherford Street pinned on Google Maps" />
+                <img src={assets.map} alt="171 Rutherford Street pinned on Google Maps" />
               </div>
             </div>
           </div>
@@ -45,3 +49,25 @@ class Contact extends React.Component {
 }
 
 export default Contact
+
+export const pageQuery = graphql`
+  query ContactQuery {
+    allContentfulAsset {
+      edges {
+        node {
+          id
+          title
+          file {
+            url
+          }
+          description
+        }
+      }
+    }
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
