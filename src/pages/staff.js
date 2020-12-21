@@ -21,7 +21,7 @@ class StaffIndex extends React.Component {
         <div style={{ background: '#fff' }}>
           <Helmet title={siteTitle} />
           <div className="wrapper">
-            <h2 className="section-headline" style={{paddingBottom: '3vmin'}}>Meet the Team</h2>
+            <h2 className="section-headline" style={{paddingBottom: '3vmin'}}>Our Team</h2>
             <div className='staff'>
               {staff.map(({ node }) => <StaffMember key={node.name} member={node} />)}
             </div>
