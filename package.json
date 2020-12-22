@@ -1,11 +1,11 @@
 {
-  "name": "contentful-starter-gatsby-blog",
-  "description": "Contentful Gatsby Starter Blog",
+  "name": "vse-website",
+  "description": "Static Site for Vector Structural Engineering",
   "private": true,
   "version": "0.0.1",
-  "author": "Contentful <opensource@contentful.com>",
+  "author": "Laché Melvin <https://github.com/lache-melvin>, Contentful <opensource@contentful.com>",
   "bugs": {
-    "url": "https://github.com/contentful/starter-gatsby-blog/issues"
+    "url": "https://github.com/lache-melvin/vse-static/issues"
   },
   "dependencies": {
     "gatsby": "^2.19.1",
@@ -19,17 +19,16 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.0"
   },
-  "homepage": "https://github.com/contentful/starter-gatsby-blog#readme",
+  "homepage": "https://github.com/lache-melvin/vse-static",
   "keywords": [
     "gatsby",
-    "contentful",
-    "starter"
+    "contentful"
   ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/contentful/starter-gatsby-blog.git"
+    "url": "git+https://github.com/lache-melvin/vse-static.git"
   },
   "scripts": {
     "dev": "gatsby develop",
