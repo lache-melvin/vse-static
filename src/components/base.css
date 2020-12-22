@@ -60,15 +60,10 @@ h3 {
   max-width: 300px;
 }
 .home-title-image {
-  position: relative;
   margin-top: 10px;
 }
 .home-title {
-  position: absolute;
-  top: 8px;
-  left: 3%;
-  text-align: left;
-  word-spacing: 5000px;
+  width: 45%;
   color: black;
 }
 .footer img {
@@ -210,6 +205,9 @@ h3 {
   
   .home-title {
     font-size: 50px;
+  }
+  .home-title-image img {
+    width: 55%;
   }
   
   .project {
