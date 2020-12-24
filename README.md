@@ -1,13 +1,18 @@
 # Vector Structural Engineering
 
-This is a static website built with Gatsby and Contentful for a start-up engineering business in Nelson.\
-\
-The site can currently be viewed [here](https://ecstatic-kirch-7bf7fb.netlify.app/) while it awaits visual and text assets from the client.
+This is a static website built with Gatsby and Contentful for an engineering business in Nelson. The site can be viewed at [vse.co.nz](https://vse.co.nz)
 
-## Crucial Commands
+## To Use
 
-`npm i`
+To clone and run this repository you'll need Git and Node.js (which comes with npm). From your command line:
 
-`npm run dev` - Run the project locally with live reload in development mode.
-
-
+```
+# Clone the repository
+git clone https://github.com/lache-melvin/file-creator-vse
+# Go into the repository
+cd file-creator-vse
+# Install dependencies
+npm install
+# Run the app locally in development mode (with live reload)
+npm run dev
+```
