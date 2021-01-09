@@ -8,9 +8,9 @@ To clone and run this repository you'll need Git and Node.js (which comes with n
 
 ```
 # Clone the repository
-git clone https://github.com/lache-melvin/file-creator-vse
+git clone https://github.com/lache-melvin/vse-static
 # Go into the repository
-cd file-creator-vse
+cd vse-static
 # Install dependencies
 npm install
 # Run the app locally in development mode (with live reload)
