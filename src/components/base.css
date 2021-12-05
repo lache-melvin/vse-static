@@ -1,10 +1,11 @@
-@import url(/font.css);
+@import url(./font.css);
 
 /* GENERAL */
 body {
   font-family: 'museo-sans', sans-serif;
   font-weight: 300;
-  background-image: url(/tessellation.png);
+  /* background-image: url(/tessellation.png); */
+  background-color: rgb(0, 47, 108);
   background-size: 75%;
 }
 p {
@@ -26,7 +27,7 @@ h3 {
 }
 
 .header {
-  background-color: white;
+  /* background-color: white; */
   padding-bottom: 2vmin;
 }
 .footer {
@@ -50,9 +51,13 @@ h3 {
 
 /* HEADER AND FOOTER */
 .header-logo-div {
-  width: 100%;
+  width: 110%;
   display: flex;
   justify-content: center;
+  background-color: white;
+  box-shadow: 0 0 8px 8px rgb(0, 47, 108) inset;
+  padding: 25px;
+  margin: -25px -25px 10px -25px;
 }
 .header-logo {
   height: 80%;
