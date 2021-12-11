@@ -9,12 +9,10 @@ class Template extends React.Component {
     return (
       <Container>
         <div className="header">
-          <div className="row">
-            <div className="header-logo-div">
-              <img className="header-logo" src={assets.logo} alt="VSE Logo" />
-            </div>
-            <Navigation location={location} />
+          <div className="header-logo-div">
+            <img className="header-logo" src={assets.logo} alt="VSE Logo" />
           </div>
+          <Navigation location={location} />
         </div>
         {children}
         <div className="footer">
