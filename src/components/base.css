@@ -5,8 +5,9 @@ body {
   font-family: 'museo-sans', sans-serif;
   font-weight: 300;
   /* background-image: url(/tessellation.png); */
-  background-color: rgb(0, 47, 108);
+  /* background-color: rgb(0, 47, 108); */
   background-size: 75%;
+  margin: 0;
 }
 p {
   background-color: white;
@@ -29,6 +30,7 @@ h3 {
 .header {
   /* background-color: white; */
   padding-bottom: 2vmin;
+  position: relative;
 }
 .footer {
   background-color: white;
@@ -51,18 +53,12 @@ h3 {
 
 /* HEADER AND FOOTER */
 .header-logo-div {
-  width: 110%;
-  display: flex;
-  justify-content: center;
   background-color: white;
-  box-shadow: 0 0 8px 8px rgb(0, 47, 108) inset;
-  padding: 25px;
-  margin: -25px -25px 10px -25px;
+  padding: 4vw;
 }
 .header-logo {
   height: 80%;
-  width: 80%;
-  max-width: 300px;
+  width: 60%;
 }
 .home-title-image {
   margin-top: 10px;
@@ -153,28 +149,35 @@ h3 {
 }
 
 
-/* NAVBAR */
-.navbar {
-  background-color: rgb(0, 47, 108);
-  width: 100%;
-  border-radius: 3px;
-  margin-bottom: 5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-right: 1%;
+/* BURGER MENU */
+.bm-burger-button {
+  position: absolute;
+  width: 10vw;
+  height: 9vw;
+  right: 10vw;
+  top: 10vw;
 }
-.navbar a, .navbar a:visited {
+.bm-burger-bars {
+  background-color: rgb(0, 47, 108);
+}
+.bm-burger-bars-hover {
+  background-color: rgb(45, 90, 148);
+}
+.bm-menu {
+  background-color: rgb(0, 47, 108);
+  background-color: rgb(45, 45, 45);
+  padding-top: 3vh;
+}
+.bm-menu a, .bm-menu a:visited {
   display: initial;
   color: white;
   text-align: center;
   text-decoration: none;
-  font-size: 15px;  /* might need to make smaller with projects */
-  padding: 10px 8px;
+  font-size: 20px;
+  padding: 3vh 0;
 }
-.navbar a:hover {
-  background-color: rgb(45, 90, 148);
-  border-radius: 5px;
+.bm-menu a:hover {
+  color: rgb(219, 177, 59);
 }
 
 
