@@ -6,7 +6,7 @@ class Nav extends React.Component {
   render() {
     const { pathname } = this.props.location;
     return (
-      <Menu right>
+      <Menu right noOverlay>
         <Link to="/" style={pathname === "/" ? { color: "#abe" } : null}>
           Home
         </Link>

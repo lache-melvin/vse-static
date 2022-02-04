@@ -4,7 +4,7 @@
 body {
   font-family: 'museo-sans', sans-serif;
   font-weight: 300;
-  /* background-image: url(/tessellation.png); */
+  background-image: url(/tessellation.png);
   /* background-color: rgb(0, 47, 108); */
   background-size: 75%;
   margin: 0;
@@ -28,9 +28,14 @@ h3 {
 }
 
 .header {
-  /* background-color: white; */
-  padding-bottom: 2vmin;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  /* padding: 5vmin; */
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  height: 15vh;
 }
 .footer {
   background-color: white;
@@ -52,13 +57,10 @@ h3 {
 
 
 /* HEADER AND FOOTER */
-.header-logo-div {
-  background-color: white;
-  padding: 4vw;
-}
 .header-logo {
-  height: 80%;
-  width: 60%;
+  height: 13vh;
+  width: auto;
+  padding: 1vh;
 }
 .home-title-image {
   margin-top: 10px;
@@ -67,6 +69,40 @@ h3 {
   width: 45%;
   color: black;
 }
+/* BURGER MENU */
+.bm-burger-button {
+  width: 7vh;
+  height: 7vh;
+  position: absolute;
+  right: 5vmin;
+  top: 4vh;
+}
+.bm-burger-bars {
+  background-color: rgb(0, 47, 108);
+}
+.bm-burger-bars-hover {
+  background-color: rgb(45, 90, 148);
+}
+.bm-menu {
+  background-color: rgb(0, 47, 108);
+  background-color: rgb(45, 45, 45);
+  padding-top: 3vh;
+  position: relative;
+  top: 5vmin;
+}
+.bm-menu a, .bm-menu a:visited {
+  display: initial;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 3vh 0;
+}
+.bm-menu a:hover {
+  color: rgb(219, 177, 59);
+}
+
+
 .footer img {
   max-width: 250px;
 }
@@ -148,51 +184,20 @@ h3 {
   margin-top: 20px;
 }
 
-
-/* BURGER MENU */
-.bm-burger-button {
-  position: absolute;
-  width: 10vw;
-  height: 9vw;
-  right: 10vw;
-  top: 10vw;
-}
-.bm-burger-bars {
-  background-color: rgb(0, 47, 108);
-}
-.bm-burger-bars-hover {
-  background-color: rgb(45, 90, 148);
-}
-.bm-menu {
-  background-color: rgb(0, 47, 108);
-  background-color: rgb(45, 45, 45);
-  padding-top: 3vh;
-}
-.bm-menu a, .bm-menu a:visited {
-  display: initial;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 20px;
-  padding: 3vh 0;
-}
-.bm-menu a:hover {
-  color: rgb(219, 177, 59);
-}
-
-
 @media only screen and (min-width: 768px) {
-  .header-logo-div {
-    width: 39%;
+  .header {
+    padding: 2vmin;
   }
-  .header-logo {
-    width: 90%;
-  }
-  .navbar {
-    width: 60%;
-    margin-top: 30px;
-    justify-content: flex-end;
-  }
+  /* .header-logo { */
+  /*   width: auto; */
+  /*   max-height: 10vh; */
+  /* } */
+  /* .bm-burger-button { */
+  /* max-width: 50px; */
+  /* max-height: 50px; */
+  /* right: 3vh; */
+  /* top: 5vh; */
+  /* } */
   .navbar a, .navbar a:visited {
     padding: 14px 16px;
     font-size: 17px;
