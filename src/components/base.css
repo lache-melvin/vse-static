@@ -31,10 +31,6 @@ h3 {
   position: fixed;
   width: 100%;
   background-color: white;
-  /* padding: 5vmin; */
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
   height: 15vh;
   margin-top: -1vh;
   z-index: 100;
@@ -207,11 +203,12 @@ h3 {
 @media only screen and (min-width: 768px) {
   .header {
     padding: 2vmin;
+    max-height: 12vh;
   }
-  /* .header-logo { */
-  /*   width: auto; */
-  /*   max-height: 10vh; */
-  /* } */
+  .header-logo {
+    width: auto;
+    max-height: 11vh;
+  }
   /* .bm-burger-button { */
   /* max-width: 50px; */
   /* max-height: 50px; */
