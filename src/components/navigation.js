@@ -18,7 +18,7 @@ class Nav extends React.Component {
         </Link>
         <Link
           to="/contact/"
-          style={pathname === "/contact/" ? { color: "#abe" } : null}
+          style={pathname === "/contact/" ? { color: "#7086c9" } : null}
         >
           Contact
         </Link>

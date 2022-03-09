@@ -36,6 +36,8 @@ h3 {
   /* justify-content: space-between; */
   /* align-items: center; */
   height: 15vh;
+  margin-top: -1vh;
+  z-index: 100;
 }
 .footer {
   background-color: white;
@@ -69,30 +71,52 @@ h3 {
   width: 45%;
   color: black;
 }
-/* BURGER MENU */
-.bm-burger-button {
-  width: 7vh;
-  height: 7vh;
-  position: absolute;
-  right: 5vmin;
-  top: 4vh;
+
+
+
+.footer img {
+  max-width: 250px;
 }
+
+
+/* BURGER MENU */
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 2.5rem;
+  height: 2rem;
+  right: 6vh;
+  top: 6vh;
+}
+/* Color/shape of burger icon bars */
 .bm-burger-bars {
   background-color: rgb(0, 47, 108);
 }
+/* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
   background-color: rgb(45, 90, 148);
 }
-.bm-menu {
-  background-color: rgb(0, 47, 108);
-  background-color: rgb(45, 45, 45);
-  padding-top: 3vh;
-  position: relative;
-  top: 5vmin;
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 50px !important;
+  width: 50px !important;
 }
+/* Color/shape of close button cross */
+.bm-cross {
+  background: rgb(116, 162, 223);
+  height: 35px !important;
+  right: 10px;
+}
+/* General sidebar styles */
+.bm-menu {
+  background: rgb(45, 45, 45);
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+/* Menu link styles */
 .bm-menu a, .bm-menu a:visited {
   display: initial;
-  color: white;
+  color: rgb(211, 210, 210);
   text-align: center;
   text-decoration: none;
   font-size: 20px;
@@ -100,11 +124,6 @@ h3 {
 }
 .bm-menu a:hover {
   color: rgb(219, 177, 59);
-}
-
-
-.footer img {
-  max-width: 250px;
 }
 
 
@@ -183,6 +202,7 @@ h3 {
   padding: 3%;
   margin-top: 20px;
 }
+
 
 @media only screen and (min-width: 768px) {
   .header {
