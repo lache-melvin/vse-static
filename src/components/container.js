@@ -1,7 +1,7 @@
 import React from "react";
 import Navigation from "./navigation";
 
-export default ({ children, location, logo }) => (
+const Container = ({ children, location, logo }) => (
   <>
     <Navigation location={location} />
     <div className="header">
@@ -14,3 +14,5 @@ export default ({ children, location, logo }) => (
     </div>
   </>
 );
+
+export default Container
