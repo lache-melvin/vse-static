@@ -5,12 +5,12 @@ export default ({ member }) => (
     <img className='staff-image' alt={member.image.description} src={member.image.file.url} />
     <div className='staff-display-div'>
       <div className='staff-info'>
-        <h4>{member.name}</h4>
         <p className='role'>{member.title}</p>
+        <h4 className='staff-name'>{member.name}</h4>
         {member.credentials && 
           <p className='qualifications'>{member.credentials}</p>
         }
-        <p>{member.email}</p>
+        <p className='email'>{member.email}</p>
       </div>
     </div>
   </div>

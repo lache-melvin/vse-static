@@ -16,7 +16,7 @@ class RootIndex extends React.Component {
 
     return (
       <Layout assets={assets} location={this.props.location}>
-        <div style={{ background: '#fff' }}>
+        <div style={{ background: '#53565A' }}>
           <Helmet title={siteTitle} />
           <div className="wrapper">
             <div className="home-title-image row">

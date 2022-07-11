@@ -15,7 +15,7 @@ class Contact extends React.Component {
 
     return (
       <Layout assets={assets} location={this.props.location}>
-        <div style={{ background: '#fff' }}>
+        <div style={{ background: '#53565A' }}>
           <Helmet title={siteTitle} />
           <div className="wrapper">
             <h2 className="section-headline">Get In Touch</h2>
@@ -37,9 +37,7 @@ class Contact extends React.Component {
                 </div>
               </div>
 
-              <div id="map">
-                <img src={assets.map} alt="171 Rutherford Street pinned on Google Maps" />
-              </div>
+              <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.4488367354174!2d173.28100279999998!3d-41.277335099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d3bed1ae5923c43%3A0x4a15a0375bebb24f!2s171%20Rutherford%20Street%2C%20Nelson%207010%2C%20New%20Zealand!5e0!3m2!1sen!2suk!4v1657525621203!5m2!1sen!2suk" title="171 Rutherford Street on Google Maps" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>

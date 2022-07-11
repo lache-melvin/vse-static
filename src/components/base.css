@@ -4,13 +4,12 @@
 body {
   font-family: 'museo-sans', sans-serif;
   font-weight: 300;
-  background-image: url(/tessellation.png);
-  /* background-color: rgb(0, 47, 108); */
+  background-color: #53565A;
   background-size: 75%;
   margin: 0;
+  color: white;
 }
 p {
-  background-color: white;
   width: fit-content;
   padding: 20px;
   font-size: 14px;
@@ -22,6 +21,7 @@ h1, h2, h3 {
   font-weight: 100;
   text-transform: uppercase;
   text-align: center;
+  color: #DBB13B;
 }
 h3 {
   margin-bottom: 10px;
@@ -34,9 +34,12 @@ h3 {
   height: 15vh;
   margin-top: -1vh;
   z-index: 100;
+  filter: drop-shadow(0 0.2rem 0.2rem rgb(34, 34, 34));
 }
 .footer {
   background-color: white;
+  background-color: black;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -129,19 +132,14 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: #D5D5D5;
 }
 .staff-image {
-  border-radius: 50%;
   width: 70%;
-  max-width: 250px;
+  max-width: 200px;
   margin: auto;
 }
 .staff-display-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: white;
-  max-width: 350px;
   margin: auto;
   margin-bottom: 20px;
   margin-top: 10px;
@@ -162,9 +160,14 @@ h3 {
 .staff-info h4 {
   font-size: 20px;
 }
+.staff-name {
+  text-transform: uppercase;
+  font-weight: 100;
+}
 .role {
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 14px; 
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
 }
 .qualifications {
   font-size: 11px;
@@ -177,7 +180,6 @@ h3 {
 
 /* CONTACT PAGE */
 .contact-info {
-  background-color: white;
   width: auto;
   padding: 17px;
 }
@@ -193,10 +195,11 @@ h3 {
 }
 
 #map {
-  height: auto;
-  background-color: white;
+  height: 400px;
   padding: 3%;
   margin-top: 20px;
+  border: 0;
+  width: 90%;
 }
 
 
@@ -247,10 +250,15 @@ h3 {
   }
   .staff {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .staff-display-div {
+    width: 400px;
   }
   .staff-member {
-    width: 50%;
+    flex-direction: row;
+    margin-bottom: 20px;
   } 
   
   .contact-content {

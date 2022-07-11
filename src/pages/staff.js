@@ -19,7 +19,7 @@ class StaffIndex extends React.Component {
 
     return (
       <Layout assets={assets} location={this.props.location}>
-        <div style={{ background: "#fff" }}>
+        <div style={{ background: "#53565A" }}>
           <Helmet title={siteTitle} />
           <div className="wrapper">
             <h2 className="section-headline" style={{ paddingBottom: "3vmin" }}>
