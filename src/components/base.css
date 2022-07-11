@@ -46,6 +46,8 @@ h2 {
   flex-direction: column;
   justify-content: center;
   padding: 1rem;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
 }
 .wrapper {
   margin: 1vmin 0vmin 1vmin 0vmin;
