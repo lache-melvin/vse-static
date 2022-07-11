@@ -9,7 +9,7 @@ const Container = ({ children, location, logo }) => (
         <img className="header-logo" src={logo} alt="VSE Logo" />
       </div>
     </div>
-    <div style={{ maxWidth: 1180, margin: "0 auto", top: "15vh", position: "relative" }}>
+    <div style={{ maxWidth: 1180, margin: "0 auto", top: "12vh", position: "relative" }}>
       {children}
     </div>
   </>
