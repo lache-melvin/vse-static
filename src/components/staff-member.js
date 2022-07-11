@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default ({ member }) => (
+const StaffMember = ({ member }) => (
   <div className='staff-member'>
     <img className='staff-image' alt={member.image.description} src={member.image.file.url} />
     <div className='staff-display-div'>
@@ -15,3 +15,5 @@ export default ({ member }) => (
     </div>
   </div>
 )
+
+export default StaffMember;

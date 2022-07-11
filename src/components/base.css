@@ -37,12 +37,11 @@ h3 {
   filter: drop-shadow(0 0.2rem 0.2rem rgb(34, 34, 34));
 }
 .footer {
-  background-color: white;
-  background-color: black;
-  color: white;
+  background-color: #383b3d;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 1rem;
 }
 .wrapper {
   margin: 1vmin 0vmin 1vmin 0vmin;
@@ -152,6 +151,7 @@ h3 {
 .staff-info {
   margin: auto;
   padding: 10px;
+  width: max-content;
 }
 .staff-info p, .staff-info h4 {
   margin: 0;
@@ -255,6 +255,9 @@ h3 {
   }
   .staff-display-div {
     width: 400px;
+  }
+  .staff-info {
+    width: initial;
   }
   .staff-member {
     flex-direction: row;
