@@ -8,6 +8,11 @@ class Template extends React.Component {
     return (
       <Container location={location} logo={assets.logo}>
         {children}
+        <div className="footer">
+          <div className="row">
+            <img src={assets.engNZ} alt="Engineering New Zealand logo" />
+          </div>
+        </div>
       </Container>
     );
   }
